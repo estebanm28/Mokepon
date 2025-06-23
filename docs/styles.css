@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    
+    background-color: #604652; 
+    font-family: "Montserrat", sans-serif;
+
+}
+
+#Seleccionar-mascota {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+} 
+
+.titulo {
+    color: white;
+    font-size: 45px;
+    font-family: "DotGothic16", sans-serif;
+   
+} 
+
+.subtitulo {
+    color: white;
+    font-size: 24px;
+    font-weight: 800px;
+
+}
+
+.tarjetas, .tarjetas-ataques  {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+    width: 300px;
+    height: 200px;
+    background: #735557;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:20px ;
+    color: white;
+    
+
+    
+}
+
+.tarjeta-de-mokepon img {
+    width: 150px;
+    padding-right: 40px;
+    
+}
+
+.tarjeta-de-mokepon p {
+    padding: 30px;
+}
+
+#boton-mascota {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 30px;
+
+}
+
+
+
+input {
+    display: none; 
+}
+
+input:checked + label {
+  background-color: #D29F80 ;
+
+}
+
+#Seleccionar-ataque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-ataque {
+    background-color: #735557;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px ;
+    border-color: transparent;
+    width: 80px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+#mensajes {
+
+    width: 280px;
+    background: #D29F80;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+#boton-reiniciar {
+    border: transparent;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 20px; 
+    background-color: #735557; 
+    width: 120px;
+    height: 25px;
+
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    color: white;
+    
+
+}
+
+#vidas-jugador, #vidas-enemigo {
+    font-size: 25px;
+    margin-bottom: 0;
+    
+}
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    margin: 10px 0;
+}
+
+@media (max-width: 560px ) {
+    .tarjetas-ataques ,  
+    .tarjetas{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 300px ) {
+   #ver-mapa div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
+
